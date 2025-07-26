@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>8ebb8436-5c09-4558-844d-d396c9b195fb</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\$(AssemblyName).xml</DocumentationFile>
+    <NoWarn>1701;1702;1572</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1572</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Controllers\LIVE\**" />
+    <Compile Remove="Controllers\Permission\**" />
+    <Compile Remove="Controllers\V2\**" />
+    <Compile Remove="Properties\PublishProfiles\**" />
+    <Content Remove="Controllers\LIVE\**" />
+    <Content Remove="Controllers\Permission\**" />
+    <Content Remove="Controllers\V2\**" />
+    <Content Remove="Properties\PublishProfiles\**" />
+    <EmbeddedResource Remove="Controllers\LIVE\**" />
+    <EmbeddedResource Remove="Controllers\Permission\**" />
+    <EmbeddedResource Remove="Controllers\V2\**" />
+    <EmbeddedResource Remove="Properties\PublishProfiles\**" />
+    <None Remove="Controllers\LIVE\**" />
+    <None Remove="Controllers\Permission\**" />
+    <None Remove="Controllers\V2\**" />
+    <None Remove="Properties\PublishProfiles\**" />
+    <_WebToolingArtifacts Remove="Properties\PublishProfiles\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Controllers\Utilities\UploadFilesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.3.0" /> -->
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="SSH.NET" Version="2025.0.0" />
+    <PackageReference Include="STC.Core.API" Version="7.0.0" />
+    <PackageReference Include="Ubiety.Dns.Core" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\stc.business.mce\stc.business.mce.csproj" />
+    <ProjectReference Include="..\stc.dto.mce\stc.dto.mce.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="CCI.API.FIN.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+	<Choose>
+		<When Condition="'$(Configuration)' == 'Release'">
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />				
+				<Content Remove="appsettings.*.json;appsettings.json" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<ItemGroup>
+				<None Include="appsettings.json" CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+
+</Project>

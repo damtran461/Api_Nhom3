@@ -1,0 +1,51 @@
+﻿{
+  "Oauth2": {
+    "ClientCredentialId": "ERP.ClientCredential",
+    "ClientCredentialSecret": "is1LRo",
+    "ClientScope": "erp-uat"
+  },
+  "Oauth2SwaggerClientInfo": {
+    "ClientName": "Swagger.ERP.ClientCredential",
+    "ClientSecret": "2EpZKY",
+    "Scopes": "erp-uat",
+    "DisableSwagger": false
+  },
+  "LoggerConfig": {
+    "Type": "kibana",
+    "ServerURL": "http://elastic.techk.edu.vn",
+    "User": "elastic",
+    "Password": "Elk$6789",
+    "Notify": {
+      "Host": "http://notification.techk.erp.vn",
+      "UserKey": "df29A7dKr7",
+      "SecretKey": "]NlVpi`r2I1L:!G",
+      "Endpoint": "/Telegram"
+    }
+  },
+  "RedisConfig": {
+    "UseRedisCache": true,
+    "ConnectionString": "stconnection.net:6379,allowAdmin=true,name=stc.erp.api,password=imb0CS0T2GS1FId7ztvRvygO32TEi0Px,abortConnect=false,connectRetry=1,AsyncTimeout=30000,SyncTimeout=30000",
+    "DbNumber": 1
+  },
+  "RedisPubSubConfig": {
+    "UseRedisCache": true,
+    "ConnectionString": "stconnection.net:6379,allowAdmin=true,name=stc.erp.api,password=imb0CS0T2GS1FId7ztvRvygO32TEi0Px,abortConnect=false,connectRetry=1,AsyncTimeout=30000,SyncTimeout=30000",
+    "DbNumber": 2
+  },
+  "JWTConfig": {
+    "Base64PublicKey": "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",
+    //"Base64PublicKey":"MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrwJnJy22dVJIYNdFKGBfeuxkiDyneCZ9gasiZJ5ntOqhnZ02NMlX5e/BwM2wxicZGikRSxeWnkgqXGEzFNGiD9UkTdMN3WXXdacz572e3PNSIEEXvGu+pOtQ8yYmrd19Vt8L6y5Daq8k8nwNylnuM+QuO7mOXTuZK0RnlptoZOcCAiY0ujjBpLrhiW4TcvGvxxYFaAMJSAzh5vO9eCSb+lvSYJ1finHyk39kawP3i6nnfNkXO+Ol9DB+qB4J3rgd/b7ZTzCZzqf3jRBQWCkR3GnH5uDkLX7EN4q5Xg+WffJDVr27aRKX2QeIXcjLuaRXI5WUE9+M3MqZMhTPx6FTFAgMBAAECggEAF6N+hyOUhp7pLKPbllMSlfkyUFm97W1tnhuUWF/284urOfAh4FkZNCk2wnqRXZAU1giZtrq+DP4wrvMNPeckq2TLFf5wGLEbY8n4CD5HDBU3OzLiLTKL4cLTCzrB0/OuD2InV9VErpQOMmXAV7kWcCSmzplI475cO9fjtJPuWKI8ew7FRg6CxLgkvwRUE/Pi3coTUoa5glCO6E3PNdE+guwIeNSH9wAARWgh6PiigtbgC9Q98uR0eWGi1A5JYEJkVPcO/+GGjTl5ZPru8SA5WcsGQf/2el7vZ2RFZoYWZ5d3rKRrU+iPLpUth9I2o6WIcEeh7fn8zmotG3uvh4et0QKBgQDXOdUUmTOUIUt5Ux98YiVTBy+Tb8+WXk65ugPBGpre2HIght1F34mgnpFI3KCKZ/1Q2O+6iCjQP7Hjc3JS1zqYEo+nXiEeiLWIkYEgujGB8wSk3jWB8UOPUGt7hpMhWQQBHbM4ScafyhjzuQxhl9mDFREhQiHGMc3qoFctPXAP7wKBgQDMSlvpZ37qS3AXAkMY7p1C34wFZcNkOyreFft+Tzl7r1Lv21YU3QspEYjSSH+2s8NqHIS0n9y3yFx/8J6RadoLp5XQUtuNAVGWoE/WhYjEgI4jBGbjT4pQj2IsfjHna6d34A6a6WLNxlE6vjhzg2YFMr+nZAuBQK7D6bAniT0yiwKBgFtbzio3OeC4HVx7v1LCKovK8hQIkzqF/67w2eUfUPwlLpTGCqk9USNgC9W86Vy29Z1a6K/qWkDDuNQOzkmB2Ppybo4h87cNWtmEwiZNQvShXqhJNrdY3U+5WFaP8mZmbb+3hrru/iQX2m2icDIBDjCJQcM3WjTSMVFWDItEmAv7AoGAEKO13Mr7QWYnmRgsEunMkVfX9dCWG6HeGfy8YUteqT5ciQDagBSJBi1RcZ9KF72Imyn7fSLQPX/qWNlmcP2oLu7VewRksZV76cLg/d4eh7LY4O1I3Bbscydanbkho3HXUCJFzkRYMd6HWzuHKZF4S9AYYC/75+k20upD2NSK0YUCgYEAu0xitHXw3CmBYcijDztBvMKFfwVlJZ71ptPBF3dcPuGzgT41T6CxHXn3UzxzXpP/Y7S8/MVipwq7wl5CDTu3F5noKqyXX4yHVFjaIEyLITCVxHedVMuDTYeKq1cTxeRJc3SOxl5JX++sgM+BTCSQNtcTKWz4eslkzeDRa/U9rxU=",
+    "Issuer": "stconnection.vn",
+    "Audiences": "stconnection.vn/resources,stconnection.vn/resources"
+  },
+  "URLConnectionCore": {
+    "IDSUrl": "http://ids-erp-uat.stconnection.net/identity"
+  },
+  "Otlp": {
+    "URI": "http://elastic.techk.edu.vn"
+  },
+  "BasicAuthentication": {
+    "Username": "User1",
+    "Password": "SecretPassword"
+  }
+}

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cci.api.LIVE:
+    image: ${DOCKER_REGISTRY-}cciapifas
+    build:
+      context: .
+      dockerfile: stc.api.edu/Dockerfile

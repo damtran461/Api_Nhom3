@@ -1,0 +1,50 @@
+﻿{
+  "Oauth2": {
+    "ClientCredentialId": "CCI.ClientID.Permission",
+    "ClientCredentialSecret": "DgHfNJ",
+    "ClientScope": "CCI.Permission"
+  },
+  "Oauth2SwaggerClientInfo": {
+    "ClientName": "CCI.Swagger.ClientCredential",
+    "ClientSecret": "8Czc8z",
+    "Scopes": "CCI.Swagger",
+    "DisableSwagger": true
+  },
+  "LoggerConfig": {
+    "Type": "kibana",
+    "ServerURL": "http://10.10.13.226:9200",
+    "User": "elastic",
+    "Password": "changeme",
+    "Notify": {
+      "Host": "http://10.10.13.22:8346",
+      "UserKey": "WmHoau",
+      "SecretKey": "taNbH7NJwh",
+      "Endpoint": "/sysNotifyGroup"
+    }
+  },
+  "RedisConfig": {
+    "UseRedisCache": true,
+    "ConnectionString": "10.10.13.22:6379,allowAdmin=true,name=lsm.api,password=7NSk8dXhGegt7c8m,abortConnect=false,connectRetry=1,AsyncTimeout=30000,SyncTimeout=30000",
+    "DbNumber": 5
+  },
+  "RedisPubSubConfig": {
+    "UseRedisCache": true,
+    "ConnectionString": "10.10.13.22:6379,allowAdmin=true,name=lsm.api,password=7NSk8dXhGegt7c8m,abortConnect=false,connectRetry=1,AsyncTimeout=30000,SyncTimeout=30000",
+    "DbNumber": 0
+  },
+  "JWTConfig": {
+    "Base64PublicKey": "MIIFTzCCBDegAwIBAgIQV2P1enlT+IlP1z3BDLdjbTANBgkqhkiG9w0BAQsFADCBkDELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxNjA0BgNVBAMTLUNPTU9ETyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTAeFw0xNzEyMjEwMDAwMDBaFw0yMTAxMTcyMzU5NTlaMFsxITAfBgNVBAsTGERvbWFpbiBDb250cm9sIFZhbGlkYXRlZDEeMBwGA1UECxMVRXNzZW50aWFsU1NMIFdpbGRjYXJkMRYwFAYDVQQDDA0qLmNvbmN1bmcuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt7kyy544gPV9yXKcRUa4+2ySrgdy0gO15FCi2vyA2bTgCMik9mrv34NS8cGxnX7+V6EXFUjhwOYl6jgAsNa3VvpJH/m5zgmpihgdU/HG8TY0jeOqW4+k6G3ZLM9craARUGPh5Z5lhx2ircmoIl/BZ25VkTy/Il91uuFiaKl32q0a3rgGll0ql7nRJSIw9w6BiQRDK1Uz3ka4Hc98dMd+mMFOMmkrS39K/m9909NkiV9Zz5VKqMAr1Ka5vvHfkJ3fpsKxuUxoDVYZlpkAQvkW8c0iNplraCQOAyAm7zTc8DCSVmGkAo4biMpFAWMUAF83hXkog1zZWFuiyUhBF+we3wIDAQABo4IB1zCCAdMwHwYDVR0jBBgwFoAUkK9qOpRaC9iQ6hJWc99DtDoo2ucwHQYDVR0OBBYEFAMze9SbksvTyP2cBCyWiBadltdxMA4GA1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBPBgNVHSAESDBGMDoGCysGAQQBsjEBAgIHMCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2VjdXJlLmNvbW9kby5jb20vQ1BTMAgGBmeBDAECATBUBgNVHR8ETTBLMEmgR6BFhkNodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3JsMIGFBggrBgEFBQcBAQR5MHcwTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET1JTQURvbWFpblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmNvbW9kb2NhLmNvbTAlBgNVHREEHjAcgg0qLmNvbmN1bmcuY29tggtjb25jdW5nLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEAaJMGiwyFx6Z0086mbU6NewM6zJuIaR8gSvjBeYE7+U7LQArI4Ndny4K6vM0HBKfUV3sFWJaG6A33jesHdWiUKGZS+i4ylNTUOEnIS7icFy4y9Z8Wy1cVkwNltiMF4VKcYnUvMrQGxmqeRwCdhkCFbEyIY9SF0HKLlT+fBd8rfUWoK+XzIG/eQ3DgOkpHUPjlMKG5j+7hdPscAbsP2FterbUdC1b2kpKoRkc0CZ8J7/zJljkE03d4EvaI2hu6Sa0lu5CVbjzWmhXG8DZMYB9uX9AYk3W7ZA+4cmqoFPZ8LDIUMbiM5hG+ZqM0X/C1B6Q3o5VTQYFFMlqFHCz2NwQ7hw==",
+    "Issuer": "stconnection.com",
+    "Audiences": "stconnection.com/resources,stconnection.vn/resources"
+  },
+  "URLConnectionCore": {
+    "IDSUrl": "https://ids-uat.stconnection.vn/identity",
+  },
+  "Otlp": {
+    "URI": "http://otel.elastic-system.stconnection.io:4317"
+  },
+  "BasicAuthentication": {
+    "Username": "User1",
+    "Password": "SecretPassword"
+  }
+}
