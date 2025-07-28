@@ -1,10 +1,8 @@
 ﻿using Core.API.Attributes;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using stc.business.mce.Services.Implements.MAT;
 using stc.business.mce.Services.Interfaces.MAT;
 using stc.dto.mce.Request.MAT.Answers;
-using stc.dto.mce.Request.MAT.Questions;
 using stc.dto.mce.Response.MAT.Answers;
 using stc.dto.mce.Response.MAT.Questions;
 using System.Collections.Generic;
@@ -32,7 +30,7 @@ namespace stc.api.mce.Controllers.MAT
         [HttpGet()]
         [MapToApiVersion("1.0")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Questions_ReadAllRes>))]
-        [ApiAuthorize(false)]
+        [AllowAnonymous]
         public async Task<IActionResult> List()
         {
             var result = await _AnswersService.List();
